@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav>
+        <div id = "nav">
+            <img class="logo" alt="Purdue University" src="images/logo.png">
+            <div class = "title" >CS Track Optimizer</div>
+        </div>
+    </nav>
+    <div id = "box">
+        <div class="container">
+            <div class = "margin">
+                <div class="step">Step 1</div>
+                <div class="instructions">Instructions: Select Tracks</div>
+                <div class="content">
+                    <div class="track-list">
+                        <div class="track" >Databases</div>
+                        <div class="track" >Computational Science</div>
+                        <div class="track" >Computer Graphics</div>
+                        <div class="track" >Algorithms</div>
+                        <div class="track" >Programming Language</div>
+                        <div class="track" >Software</div>
+                        <div class="track" >Systems</div>
+                        <div class="track" >Security</div>
+                        <div class="track" >Machine Intelligence</div>
+                    </div>
+                    <button id = "step-1" class="submit not-selected">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="container none">
+            <div class = "margin">
+                <div class="step">Step 2</div>
+                <div class="instructions">Instructions: Select classes you have taken or want to take</div>
+                <div class="content">
+                    <button id = "step-2" class="submit" >Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="container none">
+            <div class = "margin">
+                <div class="step">Step 3</div>
+                <div class="instructions">Instructions: Look at the final results below</div>
+                <div class="content">
+                    <div class = "loader">
+                        <div class = "spinner">
+                            <div class = "spinner-text">Loading...</div>
+                        </div>
+                    </div>
+                    <div id = "result"></div>
+                </div>
+                <a href = "/" id = "retry-button">Retry</a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="courses.js"></script>
+</body>
+</html>

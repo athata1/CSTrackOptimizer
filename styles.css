@@ -1,0 +1,200 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+
+body {
+  background: #918f90;
+}
+.logo {
+  position: relative;
+  width: 10rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav {
+  width: 100vw;
+}
+
+nav #nav {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 100%;
+  background-color: black;
+
+}
+
+nav #nav .title {
+  margin-left: 10px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.title:hover {
+  background-color: #3a3b3c;
+}
+
+#box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 40rem;
+  background-color: #CEB888;
+}
+
+.step {
+  position: relative;
+  width: fit-content;
+  font-size: 3rem;
+}
+
+.margin {
+  margin-top: .3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.step::before {
+  position: absolute;
+  content:"";
+  width:0;
+  height: .1rem;
+  background: black;
+  left: 0;
+  bottom: 7px;
+  transition: width 200ms ease-in-out;
+}
+
+.container:hover > .margin > .step::before {
+  width: 100%;
+  transition: width 200ms ease-in-out;
+}
+
+.instructions {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.track-list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 10px;
+}
+
+.none {
+  display: none !important;
+}
+
+.track-list .track {
+  font-size: 1.5rem;
+  display: grid;
+  text-align: center;
+  place-items: center;
+  border: 1px solid black;
+  background: gold;
+  transition: background 200ms ease-in-out;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.submit, #retry-button {
+  float: right;
+  color: black;
+  background: gold;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  width: 7rem;
+  height: 3rem;
+}
+
+.track-list .track:hover, .track-list .track-selected, .submit:hover:not(.not-selected), #retry-button:hover {
+  background: darkgoldenrod;
+  cursor: pointer;
+}
+
+.not-selected {
+  background-color: #CEB888;
+  cursor: auto;
+}
+
+.loader {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+}
+
+.loader .spinner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-right: #9F8C76 solid 10px;
+  border-left: #9F8C76 solid 10px;
+  border-top: #9F8C76 solid 10px;
+  border-bottom: yellow solid 10px;
+  animation: spin 2000ms linear infinite;
+  animation-delay: spin, -50ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader .spinner .spinner-text {
+  animation: spin 2000ms reverse linear infinite;
+  font-size: 1.5rem;
+  color: black;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.result-data {
+  width: 100%;
+  padding: .2rem;
+  border: solid black 1px;
+  font-size: 1.5rem;
+  background: lightgoldenrodyellow;
+}
+
+@media (max-width: 560px) {
+  .container {
+    width:100vw;
+  }
+
+  .track-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 470px) {
+  .track-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#retry-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
