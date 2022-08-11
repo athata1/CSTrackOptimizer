@@ -47,6 +47,7 @@ nav #nav .title {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 20rem;
 }
 
 .container {
@@ -205,8 +206,6 @@ nav #nav .title {
 }
 
 footer {
-  position: absolute;
-  bottom:0;
   color: white;
   background-color: black;
   width:100vw;
