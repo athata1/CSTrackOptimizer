@@ -199,3 +199,7 @@ nav #nav .title {
   align-items: center;
   text-decoration: none;
 }
+
+#select {
+  padding-bottom: 10px;
+}
