@@ -122,7 +122,7 @@ nav #nav .title {
   height: 3rem;
 }
 
-.track-list .track:hover, .track-list .track-selected, .submit:hover:not(.not-selected), #retry-button:hover {
+.track-list, .track-list .track-selected, .submit:hover:not(.not-selected), #retry-button:hover {
   background: darkgoldenrod;
   cursor: pointer;
 }
