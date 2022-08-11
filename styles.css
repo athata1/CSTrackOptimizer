@@ -213,3 +213,43 @@ footer {
   padding-bottom: 10px;
   font-size: 2rem;
 }
+
+#courses {
+  margin-bottom: 20px;
+}
+
+#courses, #added {
+  width: 75%;
+  height: 25rem;
+  background: white;
+  overflow-y: scroll;
+}
+
+ #courses .course {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.removed-container {
+  width: 100%;
+  display: flex;
+}
+
+.removed-container .x {
+  display: grid;
+  place-items: center;
+  float: right;
+  width: 12%;
+  background: red;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  color: white;
+}
+
+.removed-container .course {
+  padding: 10px;
+  font-size: 1.5rem;
+  width:82%;
+  border: 1px solid black;
+}
