@@ -59,7 +59,7 @@ nav #nav .title {
 
 .step {
   position: relative;
-  width: fit-content;
+  display: inline-block;
   font-size: 3rem;
 }
 
