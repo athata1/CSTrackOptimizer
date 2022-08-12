@@ -107,7 +107,7 @@ nav #nav .title {
   text-align: center;
   place-items: center;
   border: 1px solid black;
-  background: gold;
+  background: #e8dcb8;
   transition: background 200ms ease-in-out;
   padding: 5px;
   cursor: pointer;
@@ -116,7 +116,7 @@ nav #nav .title {
 .submit, #retry-button {
   float: right;
   color: black;
-  background: gold;
+  background: #e8dcb8;
   border: 1px solid black;
   font-size: 1.5rem;
   width: 7rem;
