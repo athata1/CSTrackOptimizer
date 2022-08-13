@@ -199,6 +199,7 @@ nav #nav .title {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 #select {
