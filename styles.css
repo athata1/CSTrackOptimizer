@@ -47,13 +47,12 @@ nav #nav .title {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 20rem;
 }
 
 .container {
   padding-top: 10px;
-  padding-bottom: 10px;
-  width: 40rem;
+  padding-bottom: 30rem;
+  width: 60rem;
   background-color: #CEB888;
 }
 
@@ -110,6 +109,7 @@ nav #nav .title {
   transition: background 200ms ease-in-out;
   padding: 5px;
   cursor: pointer;
+  padding: 1.5rem 0;
 }
 
 .submit, #retry-button {
@@ -177,7 +177,7 @@ nav #nav .title {
   background: lightgoldenrodyellow;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 841px) {
   .container {
     width:100vw;
     height: 100%;
