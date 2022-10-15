@@ -25,3 +25,9 @@ This program is being hosted using Github pages and can be found using the follo
 ## Future Improvements
 1. Improve algorithm in both speed and accuracy
 2. Add limited ability to remove courses
+3. Reimplementation of this project in a dynammic framework such as React or Angular
+
+## What I learned
+1. Translating my previous java implementation into javascript
+2. How to cohesively use data structures and algorithms to solve an abstract problem
+3. Utilizing classes and inheritance to better contain information as well as add general functionality to all programs
