@@ -14,9 +14,9 @@ The course selection algorithm takes the following into consideration when cours
 
 ## How it works
 The courses are separated into 3 subcategories for each track
-1. Static Requirements
-2. Dynammic Requirements
-3. Electives<br />
+  1. Static Requirements
+  2. Dynammic Requirements
+  3. Electives<br />
 Static requirements are automatically added to the course list because they have to be there no matter what. I allocate the dynammic requirements using Catesian Products adn find the tuple that has the smallest number of courses. In the event of a tie, the tuples that tie are all considered as possible solutions. Lastly, the electives are allocated using a decision tree based algorithm traversed a Breath First Search method. This will help in finding the smallest number of courses. Once the decision tree creates electives in such a way that the algorithm finds the smallest number of courses, the answer is found and the result is displayed.
 
 ## How to use algorithm/program
